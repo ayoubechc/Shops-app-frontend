@@ -1,0 +1,44 @@
+/* Float four columns side by side */
+.column {
+float: left;
+width: 25%;
+padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin-top: 80px;margin-left: 20px;
+margin-right: 20px}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+}
+
+/* Style the counter cards */
+.column .card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 16px;
+text-align: center;
+background-color: #f1f1f1;
+margin-bottom: 15px
+}
+.card img{
+    height: 170px;
+}
+.class2{
+    cursor: pointer;
+}
+.class1{
+    cursor: pointer;
+    border-bottom: 1px solid navy;
+}
